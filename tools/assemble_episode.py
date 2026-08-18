@@ -11,7 +11,6 @@ any length without a visible seam.
 The result is SILENT and cut to length - record the vocal over it.
 """
 import argparse
-import math
 import os
 import subprocess
 import sys
@@ -103,7 +102,7 @@ def main():
             make_pushin(ff, name.split(':', 1)[1], dur, dst)
         else:
             make_loop(ff, os.path.join(a.shots, name + '.mp4'), dur, dst)
-        m, s = divmod(t, 60)
+        m, s = divmod(round(t, 1), 60)
         print(f'  {int(m)}:{s:04.1f}  {label:34s} <- {name}')
         parts.append(dst)
         t += dur
@@ -120,7 +119,7 @@ def main():
         os.remove(p)
     os.remove(listfile)
     os.rmdir(tmp)
-    m, s = divmod(t, 60)
+    m, s = divmod(round(t, 1), 60)
     print(f'wrote {a.out}  ({int(m)}:{s:04.1f}, silent)')
 
 
