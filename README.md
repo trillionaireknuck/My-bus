@@ -53,3 +53,22 @@ The reference videos have 2.5M and 6.1M views and come from funded operations wi
 years of catalogue and distribution inside the YouTube Kids app. A new channel does not
 match that with one upload. What compounds here is catalogue depth, consistent
 packaging, and reusable assets — which is what this kit is built to give you.
+
+---
+
+## Zero-budget update
+
+Paid AI video turned out to be closed on all connected accounts (every model group
+probed, including Grok, returned a subscription wall). So the video in
+`assets/video/` was **rendered locally at $0** — no AI service involved.
+
+- `tools/render_clip.py` composites the cut-out bus sprite over a parallax cartoon
+  street using Pillow + ffmpeg, and produces seamlessly looping clips.
+- `assets/sprites/` holds transparent PNG cut-outs of all four bus views, extracted
+  from the turnaround sheet. These are reusable forever.
+- See **`docs/08-zero-budget-pipeline.md`** for the full free stack and workflow.
+
+```bash
+python3 tools/render_clip.py --seconds 10 --out assets/video/benny-drive-16x9.mp4
+python3 tools/render_clip.py --vertical --seconds 10 --out assets/video/benny-drive-9x16.mp4
+```
