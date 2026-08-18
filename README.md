@@ -1,1 +1,55 @@
-# My-bus
+# My Bus — Toddler Content Kit
+
+Production kit for a preschool bus-cartoon channel aimed at **ages 1–5**, built from
+your existing bus character and benchmarked against the top-performing bus videos on
+YouTube.
+
+## What's here
+
+| | |
+|---|---|
+| **`assets/reference/bus-original.png`** | Your original bus, unchanged |
+| **`assets/generated/hero-01.png`** | ⭐ The redesigned hero. Thumbnail base + video first frame |
+| **`assets/generated/turnaround-01.png`** | 4-view turnaround. Feed this to any generator for consistency |
+| **`assets/generated/bus-family-01.png`** | 4-bus cast lineup for "Different Types of Buses" |
+| **`docs/`** | The strategy: audience, formats, packaging, songs, publishing |
+| **`prompts/`** | Copy-paste prompt library for images and video |
+
+## Start here
+
+1. **`docs/01-character-bible.md`** — what changed about the bus and why, plus the
+   exact hex palette sampled from the hero render.
+2. **`docs/02-audience-and-format.md`** — how this niche actually works. Read this one
+   even if you skip the rest.
+3. **`docs/03-episode-formats.md`** — the four formats to make.
+4. **`docs/04-thumbnails-and-titles.md`** — packaging, which is most of the game.
+5. **`docs/05-song-library.md`** — public-domain melodies plus original lyrics written
+   for Benny.
+6. **`docs/06-publishing-checklist.md`** — Made-for-Kids rules and what they cost you.
+
+## The three things that matter most
+
+1. **Saturation and eye size.** Your bus was pastel with small eyes. Both were working
+   against you — pastel disappears in a thumbnail grid, and small eyes do not read at
+   120px. That is the change in `hero-01.png`.
+2. **Length is the product.** The videos you benchmarked are 40 and 65 minutes. Make
+   2–4 minute songs, then compile them. Every song should end up in five or more
+   compilations.
+3. **Show the face in the first 3 seconds.** No logo sting at the start. This is the
+   most common fatal mistake on new channels in this niche.
+
+## Status
+
+- ✅ Hero redesign, turnaround sheet, and cast lineup generated
+- ⛔ **Video not generated** — every image-to-video model on the connected accounts was
+  either subscription-gated or a human-avatar lip-sync tool that cannot animate a
+  vehicle. Prompts are written and ready in `prompts/02-video-shots.md`.
+- Generation budget is currently exhausted (OpenArt 0 credits; Artlist free image used;
+  Artlist free video unusable on available models).
+
+## A note on the benchmark
+
+The reference videos have 2.5M and 6.1M views and come from funded operations with
+years of catalogue and distribution inside the YouTube Kids app. A new channel does not
+match that with one upload. What compounds here is catalogue depth, consistent
+packaging, and reusable assets — which is what this kit is built to give you.
