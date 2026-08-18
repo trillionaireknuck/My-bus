@@ -72,3 +72,29 @@ probed, including Grok, returned a subscription wall). So the video in
 python3 tools/render_clip.py --seconds 10 --out assets/video/benny-drive-16x9.mp4
 python3 tools/render_clip.py --vertical --seconds 10 --out assets/video/benny-drive-9x16.mp4
 ```
+
+---
+
+## Episode 1
+
+**"The Wheels on Benny's Bus"** — 3:43, traditional melody (public domain).
+
+- **Script + timing map:** `docs/episodes/ep01-wheels-on-bennys-bus.md`
+- **Picture lock:** `assets/video/ep01-picture-lock.mp4` — silent, cut to length
+- **Shot bank:** `assets/video/shots/` — seamless loops in day, rain, night, sunset,
+  park, plus two face closeups
+
+The picture is finished. The vocal is the only piece left, and it's the one piece
+that needs a human.
+
+```bash
+# re-render any shot at any length or orientation
+python3 tools/render_clip.py --scene night --seconds 12 --out shot.mp4
+python3 tools/render_clip.py --scene day --framing closeup --seconds 8 --out hook.mp4
+
+# rebuild the episode after changing shots or timing
+python3 tools/assemble_episode.py --out assets/video/ep01-picture-lock.mp4
+```
+
+Scenes: `day`, `rain`, `night`, `sunset`, `park`. Framings: `wide`, `closeup`.
+Add `--vertical` for a 1080x1920 Shorts cut.
