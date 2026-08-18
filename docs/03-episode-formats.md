@@ -13,7 +13,7 @@ recompiled forever.
 
 | Time | What happens |
 |---|---|
-| 0:00–0:03 | **Benny's face, eye contact, already smiling.** No logo. No title card. |
+| 0:00–0:03 | **Ella's face, eye contact, already smiling.** No logo. No title card. |
 | 0:03–0:10 | Hook — the first line of the chorus, sung, with the main visual gag |
 | 0:10–2:30 | Verses. 4–6 verses, each a small variation on one idea |
 | Last 15s | Wave goodbye + your end card / subscribe |
@@ -74,7 +74,7 @@ Cut the single best 20–40 seconds out of a song, reframed vertical.
 - Shorts do **not** monetise well on kids content and do not build watch time.
 - They are for discovery and for the algorithm to learn who your audience is.
 - Post them, but never at the expense of the long-form catalogue.
-- Reframe to 9:16 by moving the camera in on Benny's face — do not letterbox.
+- Reframe to 9:16 by moving the camera in on Ella's face — do not letterbox.
 
 ---
 

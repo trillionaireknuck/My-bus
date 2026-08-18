@@ -82,7 +82,7 @@ You now have a bus and a train. A word of caution: a new channel grows fastest w
 catalogue depth that actually drives growth.
 
 The most efficient path is to pick one as the hero and let the other be recurring
-supporting cast — Jayden as the train Benny waves to at the level crossing, say. That
+supporting cast — Jayden as the train Ella waves to at the level crossing, say. That
 gives you crossover content and variety without splitting your identity.
 
 Both characters share the same green-plus-warm-accent palette family, so they already

@@ -1,4 +1,4 @@
-# Episode 1 — "The Wheels on Benny's Bus"
+# Episode 1 — "The Wheels on Ella's Bus"
 
 **Runtime:** 3:43 · **Melody:** *The Wheels on the Bus* (traditional, public domain)
 **Format:** Song (see `docs/03-episode-formats.md`, Format 1)
@@ -50,37 +50,37 @@ be any length.
 
 ### CHORUS — sing between every verse
 
-> The wheels on Benny go round and round,
+> The wheels on Ella go round and round,
 > Round and round, round and round.
-> The wheels on Benny go round and round,
+> The wheels on Ella go round and round,
 > All through the town!
 
 ### Intro (0:00) — spoken or sung over the closeup
 
-> Hi! I'm Benny! Let's go for a ride!
+> Hi! I'm Ella! Let's go for a ride!
 
 ### Verse 1 — Wipers (0:25.7)
-> The wipers on Benny go swish, swish, swish,
+> The wipers on Ella go swish, swish, swish,
 > Swish, swish, swish, swish, swish, swish.
-> The wipers on Benny go swish, swish, swish,
+> The wipers on Ella go swish, swish, swish,
 > All through the town!
 
 ### Verse 2 — Horn (1:00.0)
-> The horn on Benny goes beep, beep, beep...
+> The horn on Ella goes beep, beep, beep...
 
 ### Verse 3 — Doors (1:34.3)
-> The doors on Benny go open and shut...
+> The doors on Ella go open and shut...
 
 ### Verse 4 — Lights (2:08.6)
-> The lights on Benny go blink, blink, blink...
+> The lights on Ella go blink, blink, blink...
 
 ### Verse 5 — Friends (2:42.9)
-> The friends on Benny go chat, chat, chat...
+> The friends on Ella go chat, chat, chat...
 
 ### Verse 6 — Slow down (3:17.1) — *drop to about 70 BPM*
-> The wheels on Benny go slow... slow... slow...
+> The wheels on Ella go slow... slow... slow...
 > Slow... and... stop.
-> The wheels on Benny go slow... slow... slow...
+> The wheels on Ella go slow... slow... slow...
 > Good night, little town.
 
 ### Outro (3:34.3)
@@ -121,7 +121,7 @@ Free tools: **Audacity** to record, **MuseScore** to lay out the melody,
 ## Title and packaging
 
 ```
-Wheels On The Bus | Benny the Bus | Nursery Rhymes & Kids Songs
+Wheels On The Bus | Ella the Bus | Nursery Rhymes & Kids Songs
 ```
 
 Thumbnail: crop `assets/generated/hero-01.png` to 1280×720, face large, eyes to

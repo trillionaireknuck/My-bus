@@ -1,10 +1,20 @@
-# Character Bible — "Benny the Bus" (working name)
+# Character Bible — "Ella the Bus" (working name)
 
-> **The name is a placeholder.** "Benny" was chosen because plosive B-sounds are among
-> the easiest consonants for a 1–3 year old to say, and it pairs with Jayden the Train.
-> Alternatives that work the same way: Bobby, Buddy, Bella, Bibi.
-> **Before you commit to a name, search YouTube for it** — you do not want to launch
-> into an existing channel's brand. Pick a name you can also get as a channel handle.
+> **Why "Ella" works.** Two syllables with the stress on the first (EL-la) — a trochee,
+> which is the dominant stress pattern in English child-directed speech and among the
+> easiest shapes for a toddler to reproduce. It is also a real, widely familiar name
+> rather than an invented one, which helps parents remember it.
+>
+> It also reads as feminine, and that is a genuine differentiator: almost every
+> vehicle character in this niche is male-coded. A girl bus stands out in a search
+> results page full of boy trucks and trains.
+>
+> **Before you commit, search YouTube for the name** — you do not want to launch into
+> an existing channel's brand. Pick something you can also get as a channel handle.
+>
+> Ella's pronouns are your call — the songs and scripts are written so they never
+> need one ("The wheels on Ella go round and round"), so you can decide later without
+> rewriting anything.
 
 ## The design change, and why
 
@@ -62,6 +72,23 @@ Happy (default), Surprised (eyes wide, mouth small O), Sleepy (eyelids half down
 Excited (eyes squinted into upward arcs, big open smile). Four expressions cover
 almost every song.
 
+## Direction of travel
+
+Ella drives **screen-left to screen-right**, in the **near lane** — below the dashed
+centre line, on the side of the road closest to camera.
+
+That combination is not arbitrary. On a right-hand-drive road the near lane carries
+traffic moving left to right, so this is the only pairing that reads as legal driving
+to an American viewer. Two things have to agree for it to work:
+
+1. **The front of the bus leads.** The turnaround sprite faces screen-left, so the
+   renderer mirrors it. If you ever swap the sprite, check the front still points
+   the way the world is scrolling.
+2. **The background scrolls right to left.** That is what sells motion to the right.
+
+Get one of these backwards and the bus looks like it is driving in reverse, or in the
+oncoming lane. Both read as "wrong" even to viewers who could not say why.
+
 ## Hard rules — do not break these
 
 1. **Never** put the face anywhere but the front.
@@ -79,7 +106,7 @@ a yellow school bus, a red double-decker, and a small blue minibus. That directl
 unlocks the "Different Types of Buses" format, which is one of the highest-performing
 formats in this niche.
 
-Keep Benny as the hero — same size advantage, always front and centre. Companions are
+Keep Ella as the hero — same size advantage, always front and centre. Companions are
 supporting cast, not co-leads. A channel with one recognisable face beats a channel
 with four interchangeable ones.
 

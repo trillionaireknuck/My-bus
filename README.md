@@ -24,7 +24,7 @@ YouTube.
 3. **`docs/03-episode-formats.md`** — the four formats to make.
 4. **`docs/04-thumbnails-and-titles.md`** — packaging, which is most of the game.
 5. **`docs/05-song-library.md`** — public-domain melodies plus original lyrics written
-   for Benny.
+   for Ella.
 6. **`docs/06-publishing-checklist.md`** — Made-for-Kids rules and what they cost you.
 
 ## The three things that matter most
@@ -69,17 +69,17 @@ probed, including Grok, returned a subscription wall). So the video in
 - See **`docs/08-zero-budget-pipeline.md`** for the full free stack and workflow.
 
 ```bash
-python3 tools/render_clip.py --seconds 10 --out assets/video/benny-drive-16x9.mp4
-python3 tools/render_clip.py --vertical --seconds 10 --out assets/video/benny-drive-9x16.mp4
+python3 tools/render_clip.py --seconds 10 --out assets/video/ella-drive-16x9.mp4
+python3 tools/render_clip.py --vertical --seconds 10 --out assets/video/ella-drive-9x16.mp4
 ```
 
 ---
 
 ## Episode 1
 
-**"The Wheels on Benny's Bus"** — 3:43, traditional melody (public domain).
+**"The Wheels on Ella's Bus"** — 3:43, traditional melody (public domain).
 
-- **Script + timing map:** `docs/episodes/ep01-wheels-on-bennys-bus.md`
+- **Script + timing map:** `docs/episodes/ep01-wheels-on-ellas-bus.md`
 - **Picture lock:** `assets/video/ep01-picture-lock.mp4` — silent, cut to length
 - **Shot bank:** `assets/video/shots/` — seamless loops in day, rain, night, sunset,
   park, plus two face closeups

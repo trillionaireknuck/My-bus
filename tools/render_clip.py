@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Render looping "Benny the Bus" clips with no paid services.
+Render looping "Ella the Bus" clips with no paid services.
 Pillow draws the scene, ffmpeg encodes it. Every clip loops seamlessly.
 
     python3 tools/render_clip.py --scene day   --seconds 10 --out out.mp4
@@ -199,7 +199,7 @@ def main():
     ap.add_argument('--vertical', action='store_true')
     ap.add_argument('--seconds', type=int, default=10)
     ap.add_argument('--fps', type=int, default=30)
-    ap.add_argument('--out', default='assets/video/benny-drive-16x9.mp4')
+    ap.add_argument('--out', default='assets/video/ella-drive-16x9.mp4')
     ap.add_argument('--sprite', default='assets/sprites/bus-front.png')
     a = ap.parse_args()
 
@@ -244,15 +244,18 @@ def main():
     rain_sx, rain_sy = 240 * 4 / N, 240 * 9 / N
 
     bus = Image.open(a.sprite).convert('RGBA')
+    # The turnaround sprite faces screen-left; the world scrolls right-to-left, so
+    # the bus is travelling screen-right. Mirror it so the front leads.
+    bus = bus.transpose(Image.FLIP_LEFT_RIGHT)
     if a.framing == 'closeup':
         # frame on the face: the sprite is a 3/4 view, so the eyes sit left of centre
         fw = 1.05 if not a.vertical else 1.55
-        focal = (0.30, 0.34)
+        focal = (0.70, 0.34)
         baseline_f = 0.46
     else:
         fw = 0.42 if not a.vertical else 0.92
         focal = None
-        baseline_f = 0.46 if not a.vertical else 0.30
+        baseline_f = 0.72 if not a.vertical else 0.62
     target_w = int(W * fw)
     bus = bus.resize((target_w, int(bus.height * target_w / bus.width)), Image.LANCZOS)
     baseline = horizon + int(road_h * baseline_f)
@@ -305,8 +308,8 @@ def main():
             fr.alpha_composite(sh_img, ((W - sw) // 2, baseline - sh // 2))
 
         if glow is not None and not focal:
-            for gx, gy in ((bx + int(bw * 0.16), by + int(bh * 0.74)),
-                           (bx + int(bw * 0.55), by + int(bh * 0.74))):
+            for gx, gy in ((bx + int(bw * 0.84), by + int(bh * 0.74)),
+                           (bx + int(bw * 0.45), by + int(bh * 0.74))):
                 fr.alpha_composite(glow, (gx - glow.width // 2, gy - glow.height // 2))
 
         fr.alpha_composite(b, (bx, by))

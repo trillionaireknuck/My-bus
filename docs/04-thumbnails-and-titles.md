@@ -7,7 +7,7 @@ thumbnail; the parent scrolling a phone at 7am does.
 
 Reverse-engineered from the two videos in your reference screenshot:
 
-1. **A face, large, eyes to camera.** Benny's face should fill 40–60% of the frame.
+1. **A face, large, eyes to camera.** Ella's face should fill 40–60% of the frame.
    Crop in tighter than feels comfortable — thumbnails are viewed at ~120px wide.
 2. **Runtime badge, top right.** "40 min", "1 HOUR". This is the single highest-value
    element for a parent. Both reference thumbnails had one.
@@ -34,10 +34,10 @@ Traditional-melody titles carry the search volume. Structure:
 
 Real examples in that shape:
 
-- `Wheels On The Bus | 40 Minutes of Nursery Rhymes | Benny the Bus`
+- `Wheels On The Bus | 40 Minutes of Nursery Rhymes | Ella the Bus`
 - `Different Types Of Buses! | Learn Vehicles for Toddlers | 30 Min`
 - `10 Little Buses | Counting Songs for Kids | 1 Hour`
-- `Bus Colour Song | Learn Colours for Babies | Benny the Bus`
+- `Bus Colour Song | Learn Colours for Babies | Ella the Bus`
 
 **Why this order:** the searched term goes first, because titles truncate. Everything
 after the first ~50 characters may not display on mobile.

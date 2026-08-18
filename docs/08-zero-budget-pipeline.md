@@ -42,15 +42,15 @@ uses only Pillow and ffmpeg — both free, both already installed here.
 
 ```bash
 # 10-second landscape clip for the main catalogue
-python3 tools/render_clip.py --seconds 10 --out assets/video/benny-drive-16x9.mp4
+python3 tools/render_clip.py --seconds 10 --out assets/video/ella-drive-16x9.mp4
 
 # vertical cut for Shorts
-python3 tools/render_clip.py --vertical --seconds 10 --out assets/video/benny-drive-9x16.mp4
+python3 tools/render_clip.py --vertical --seconds 10 --out assets/video/ella-drive-9x16.mp4
 ```
 
 What it produces: a parallax cartoon street (drifting clouds, scrolling buildings,
-trees, and a dashed road), with Benny bouncing on his suspension and a contact shadow
-that shrinks as he lifts. Every layer travels a whole number of tiles across the clip,
+trees, and a dashed road), with Ella bouncing on its suspension and a contact shadow
+that shrinks as it lifts. Every layer travels a whole number of tiles across the clip,
 so **frame 1 and the last frame match exactly** — you can loop it end to end forever
 with no visible seam.
 

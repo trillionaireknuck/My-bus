@@ -31,14 +31,14 @@ time*. That is why the earlier docs put so much weight on those three things.
 - [ ] Tags: song name, "nursery rhymes", "kids songs", "toddlers", character name
 - [ ] Added to a themed playlist (playlists still work and still drive sessions)
 - [ ] Audio checked on a phone speaker, not just headphones
-- [ ] Watched the first 10 seconds back — is Benny's face on screen by 0:03?
+- [ ] Watched the first 10 seconds back — is Ella's face on screen by 0:03?
 - [ ] No flashing, strobing, or sudden loud sounds anywhere
 
 ## Chapter format for the description
 
 ```
 00:00 Wheels on the Bus
-02:14 Benny's Colour Route
+02:14 Ella's Colour Route
 04:38 Count the Buses
 07:01 Old MacDonald
 ```

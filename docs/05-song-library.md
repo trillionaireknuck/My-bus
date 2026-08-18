@@ -30,41 +30,41 @@ in this space uses them. They carry permanent, evergreen search volume.
 > Copyright claims on kids' channels are usually about somebody using a competitor's
 > recording of a "free" song.
 
-## Original verses — "The Wheels on Benny's Bus"
+## Original verses — "The Wheels on Ella's Bus"
 
 Written for you, to the traditional "Wheels on the Bus" melody. Each verse is one
 idea and one visual gag, exactly as Format 1 requires.
 
 **CHORUS** *(repeat between every verse)*
-> The wheels on Benny go round and round,
+> The wheels on Ella go round and round,
 > Round and round, round and round.
-> The wheels on Benny go round and round,
+> The wheels on Ella go round and round,
 > All through the town!
 
 **Verse 1 — Wipers**
-> The wipers on Benny go swish, swish, swish...
-*Visual: rain, wipers sweep the big eyes, Benny blinks in time.*
+> The wipers on Ella go swish, swish, swish...
+*Visual: rain, wipers sweep the big eyes, Ella blinks in time.*
 
 **Verse 2 — Horn**
-> The horn on Benny goes beep, beep, beep...
-*Visual: Benny bounces once on each beep, headlights flash.*
+> The horn on Ella goes beep, beep, beep...
+*Visual: Ella bounces once on each beep, headlights flash.*
 
 **Verse 3 — Doors**
-> The doors on Benny go open and shut...
+> The doors on Ella go open and shut...
 *Visual: side doors fold, a small animal passenger hops aboard.*
 
 **Verse 4 — Lights**
-> The lights on Benny go blink, blink, blink...
+> The lights on Ella go blink, blink, blink...
 *Visual: night scene, warm glow, stars above. Good bedtime-compilation material.*
 
 **Verse 5 — Friends**
-> The friends on Benny go chat, chat, chat...
+> The friends on Ella go chat, chat, chat...
 *Visual: the yellow, red and blue buses pull alongside, all waving.*
 
 **Verse 6 — Slow down (always end calm)**
-> The wheels on Benny go slow... slow... slow...
+> The wheels on Ella go slow... slow... slow...
 > Slow... and... stop.
-> The wheels on Benny go slow... slow... slow...
+> The wheels on Ella go slow... slow... slow...
 > Good night, little town.
 
 That last verse matters. Ending calm rather than at full energy is what makes a video
@@ -74,12 +74,12 @@ usable at bedtime, and bedtime is one of the highest-volume searches in the cate
 
 Use these *after* a traditional-melody song has brought people in:
 
-- **"Benny's Colour Route"** — a differently coloured bus joins at each stop
+- **"Ella's Colour Route"** — a differently coloured bus joins at each stop
 - **"Count the Buses"** — 1 to 10, one bus per number, they line up at the end
-- **"Where Does Benny Go?"** — school, park, beach, zoo, home
-- **"Benny's Bumpy Road"** — texture and motion: bumpy, smooth, uphill, downhill
+- **"Where Does Ella Go?"** — school, park, beach, zoo, home
+- **"Ella's Bumpy Road"** — texture and motion: bumpy, smooth, uphill, downhill
 - **"Beep Beep, Good Morning"** — a morning-routine song
-- **"Sleepy Benny"** — slow, minor-key-ish lullaby version of the main theme
+- **"Sleepy Ella"** — slow, minor-key-ish lullaby version of the main theme
 
 ## Production notes for the audio
 
