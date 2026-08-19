@@ -51,15 +51,15 @@ def ffmpeg_exe():
     return imageio_ffmpeg.get_ffmpeg_exe()
 
 
-def make_loop(ff, src, dur, dst):
-    """Loop a shot to fill `dur` seconds."""
+def make_loop(ff, src, nframes, dst):
+    """Loop a shot to fill exactly `nframes` frames."""
     subprocess.run([ff, '-y', '-loglevel', 'error', '-stream_loop', '-1', '-i', src,
-                    '-t', f'{dur:.3f}', '-an', *ENC, dst], check=True)
+                    '-frames:v', str(nframes), '-an', *ENC, dst], check=True)
 
 
-def make_pushin(ff, still, dur, dst, zoom_to=1.18):
+def make_pushin(ff, still, nframes, dst, zoom_to=1.18):
     """Slow Ken Burns push-in on a still, rendered frame by frame into ffmpeg."""
-    n = int(round(dur * FPS))
+    n = nframes
     im = Image.open(still).convert('RGB')
     # oversample so the widest crop is still >= output size
     base = im.resize((int(W * zoom_to), int(H * zoom_to)), Image.LANCZOS)
@@ -94,18 +94,28 @@ def main():
     if missing:
         sys.exit('missing shots: ' + ', '.join(sorted(set(missing))))
 
+    # Frame boundaries come from the CUMULATIVE time, so per-section rounding
+    # cannot accumulate into audible drift against the music.
+    cum, acc = [], 0.0
+    for _, dur, _ in TIMELINE:
+        acc += dur
+        cum.append(int(round(acc * FPS)))
+    starts = [0] + cum[:-1]
+    counts = [cum[i] - starts[i] for i in range(len(TIMELINE))]
+
     tmp = tempfile.mkdtemp(prefix='ep01_')
-    parts, t = [], 0.0
-    for i, (name, dur, label) in enumerate(TIMELINE):
+    parts = []
+    for i, (name, _dur, label) in enumerate(TIMELINE):
         dst = os.path.join(tmp, f'{i:02d}.mp4')
         if name.startswith('still:'):
-            make_pushin(ff, name.split(':', 1)[1], dur, dst)
+            make_pushin(ff, name.split(':', 1)[1], counts[i], dst)
         else:
-            make_loop(ff, os.path.join(a.shots, name + '.mp4'), dur, dst)
-        m, s = divmod(round(t, 1), 60)
-        print(f'  {int(m)}:{s:04.1f}  {label:34s} <- {name}')
+            make_loop(ff, os.path.join(a.shots, name + '.mp4'), counts[i], dst)
+        secs = starts[i] / FPS
+        m, s = divmod(secs, 60)
+        print(f'  {int(m)}:{s:05.2f}  {label:34s} <- {name}')
         parts.append(dst)
-        t += dur
+    t = cum[-1] / FPS
 
     listfile = os.path.join(tmp, 'list.txt')
     with open(listfile, 'w') as fh:
@@ -119,8 +129,8 @@ def main():
         os.remove(p)
     os.remove(listfile)
     os.rmdir(tmp)
-    m, s = divmod(round(t, 1), 60)
-    print(f'wrote {a.out}  ({int(m)}:{s:04.1f}, silent)')
+    m, s = divmod(t, 60)
+    print(f'wrote {a.out}  ({int(m)}:{s:05.2f}, {cum[-1]} frames, silent)')
 
 
 if __name__ == '__main__':
